@@ -95,9 +95,7 @@ function ExamplesNavbar() {
             >
               Now Ui Kit
             </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
-            </UncontrolledTooltip>
+            <UncontrolledTooltip target="#navbar-brand"></UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {

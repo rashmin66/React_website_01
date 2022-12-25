@@ -44,7 +44,7 @@ function TransparentFooter() {
           >
             Invision
           </a>
-          . Coded by{" "}
+         
           <a
             href="https://www.creative-tim.com?ref=nukr-transparent-footer"
             target="_blank"
