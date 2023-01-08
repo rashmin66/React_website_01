@@ -24,7 +24,7 @@ function IndexHeader() {
 
   return (
 
-      <div className="page-header" background-color="black">
+      <div className="page-header">
         <div
           className="page-header-image"
           // style={{
@@ -50,11 +50,12 @@ function IndexHeader() {
             Lorem lpsum is simply dummy text of the printing and typesetting industry.
             lorem lpsum has been the industry's standard.
             </p>
-          <button type="button" class="btn-primary mb-3">Get more details</button>
+          <button type="button" class="btn mb-3">Get more details</button>
         </div>
     
         <div class="col-lg-6 order-2 text-lg-start">
-        <img src="https://play-lh.googleusercontent.com/GxIIRBDk67tp_HUtP71zXPDlfSNaL5xcMGiCtWzF0e9eIsgnhjfiqIGu0e07mZvquig=w526-h296-rw" alt="My Image"  />
+        <img class="fluid" src="https://img.freepik.com/free-vector/vintage-badge-hand-holding-joystick-vector-illustration-round-label-with-gamepad_74855-11224.jpg?w=740&t=st=1673200315~exp=1673200915~hmac=3a9bb4304c60fd7038e8aebfd73086ffd2a4720b14b014a703a5a75cff88eec0" 
+        alt="My Image"  />
         </div>
         </div>
       </Container>
