@@ -81,20 +81,7 @@ function IndexNavbar() {
             navbar
           >
             <Nav navbar>
-              {/* <NavItem>
-                <NavLink
-                  href="#pablo"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
-                >
-                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
-                  <p>Download</p>
-                </NavLink>
-              </NavItem> */}
+              
               {/* <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -120,21 +107,49 @@ function IndexNavbar() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown> */}
-              {/* <NavItem>
-                <Button
-                  className="nav-link btn-neutral"
+            <NavItem> 
+              <NavLink
+                  // className="nav-link btn-neutral"
                   color="info"
-                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nukr-index-navbar"
-                  id="upgrade-to-pro"
+                  href="#"
+                  // id="upgrade-to-pro"
                   target="_blank"
-                >
-                  <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
-                  <p>Upgrade to PRO</p>
-                </Button>
-                <UncontrolledTooltip target="#upgrade-to-pro">
+             >
+                  <p>Home</p>
+              </NavLink>
+              </NavItem>
+              <NavItem>
+              <NavLink
+                  // className="nav-link btn-neutral"
+                  color="info"
+                  href="#"
+                  // id="upgrade-to-pro"
+                  target="_blank"
+             >
+                  {/* <i className="now-ui-icons arrows-1_share-66 mr-1"></i> */}
+                  <p>About us</p>
+              
+                {/* <UncontrolledTooltip target="#upgrade-to-pro">
                   Cooming soon!
-                </UncontrolledTooltip>
-              </NavItem> */}
+                </UncontrolledTooltip> */}
+                </NavLink>
+              </NavItem>
+              <NavItem>
+             <NavLink
+                  // className="nav-link btn-neutral"
+                  color="info"
+                  href="#"
+                  // id="upgrade-to-pro"
+                  target="_blank"
+             >
+                  {/* <i className="now-ui-icons arrows-1_share-66 mr-1"></i> */}
+                  <p>News</p>
+              
+                {/* <UncontrolledTooltip target="#upgrade-to-pro">
+                  Cooming soon!
+                </UncontrolledTooltip> */}
+                </NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink
                   href="https://twitter.com/CreativeTim?ref=creativetim"
@@ -173,6 +188,26 @@ function IndexNavbar() {
                 <UncontrolledTooltip target="#instagram-tooltip">
                   Follow us on Instagram
                 </UncontrolledTooltip>
+               </NavItem>
+               {/*<NavItem>
+                <Button
+                  href="#"
+                  target="_blank"
+                  // id="twitter-tooltip"
+                >
+                  <p>Contact us</p>
+                </Button>
+              </NavItem> */}
+              <NavItem>
+                <Button
+                  className="nav-link btn-neutral"
+                  color="info"
+                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nukr-index-navbar"
+                  id="upgrade-to-pro"
+                  target="_blank"
+                >
+                  <p>Contact us</p>
+                </Button>
               </NavItem>
             </Nav>
           </Collapse>
