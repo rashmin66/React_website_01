@@ -8,47 +8,29 @@ import { Container, Row, Col } from 'reactstrap'
 function Typography() {
   return (
     <>
-      <div className="section noselect align-items-right">
+      <div className="section noselect">
         <Container>
-          <div className="space-50"></div>
-          <div id="images float-right">
-            <h4>Games</h4>
-            <Row>
+          <div id="images">
+            <h4 className="font-weight-bold">Our current games</h4>
+            <Row className="float-center">
               <Col sm="2">
-                <p className="category">Raised</p>
-                <img
-                  draggable={false}
-                  alt="..."
-                  className="rounded img-raised"
-                  src={require('assets/img/julie.jpg')}
-                ></img>
-              </Col>
-              <Col sm="2">
-                <p className="category">Raised</p>
-                <img
-                  draggable={false}
-                  alt="..."
-                  className="rounded img-raised"
-                  src={require('assets/img/julie.jpg')}
-                ></img>
-              </Col>
-              <Col sm="2">
-                <p className="category">Raised</p>
-                <img
-                  draggable={false}
-                  alt="..."
-                  className="rounded img-raised"
-                  src={require('assets/img/julie.jpg')}
-                ></img>
-              </Col>
-              <Col sm="2">
-                <p className="category">Raised</p>
-                <img
-                  draggable={false}
-                  alt="..."
-                  className="rounded img-raised"
-                  src={require('assets/img/julie.jpg')}
-                ></img>
+                {/* <p className="category">Raised</p> */}
+                <a
+                  href="#"
+                  role="button"
+                  aria-pressed="true"
+                  className="ripple"
+                >
+                  <img
+                    draggable={false}
+                    alt="..."
+                    className="rounded img-raised"
+                    src={require('assets/img/GameIcons/RTR-icon.png')}
+                  ></img>
+                </a>
+                <button type="button" class="btn btn-primary btn-lg">
+                  Primary
+                </button>
               </Col>
             </Row>
           </div>
