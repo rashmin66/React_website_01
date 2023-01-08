@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { MDBCarousel, MDBCarouselItem } from 'mdb-react-ui-kit'
 // reactstrap components
 import { Container, Row, Col } from 'reactstrap'
 
@@ -8,34 +8,27 @@ import { Container, Row, Col } from 'reactstrap'
 function Images() {
   return (
     <>
-      <div className="section section-images">
-        <Container>
-          <Row>
-            <Col md="12">
-              <div className="hero-images-container">
-                <img
-                  draggable={false}
-                  alt="..."
-                  src={require('assets/img/hero-image-1.png')}
-                ></img>
-              </div>
-              <div className="hero-images-container-1">
-                <img
-                  draggable={false}
-                  alt="..."
-                  src={require('assets/img/hero-image-2.png')}
-                ></img>
-              </div>
-              <div className="hero-images-container-2">
-                <img
-                  draggable={false}
-                  alt="..."
-                  src={require('assets/img/hero-image-3.png')}
-                ></img>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+      <div className="section-images-fluid m-5 p-0">
+        <MDBCarousel showControls showIndicators>
+          <MDBCarouselItem
+            className="w-100 d-block"
+            itemId={1}
+            src="https://play-lh.googleusercontent.com/GxIIRBDk67tp_HUtP71zXPDlfSNaL5xcMGiCtWzF0e9eIsgnhjfiqIGu0e07mZvquig=w526-h296-rw"
+            alt="..."
+          />
+          <MDBCarouselItem
+            className="w-100 d-block"
+            itemId={2}
+            src="https://play-lh.googleusercontent.com/GxIIRBDk67tp_HUtP71zXPDlfSNaL5xcMGiCtWzF0e9eIsgnhjfiqIGu0e07mZvquig=w526-h296-rw"
+            alt="..."
+          />
+          <MDBCarouselItem
+            className="w-100 d-block"
+            itemId={3}
+            src="https://play-lh.googleusercontent.com/GxIIRBDk67tp_HUtP71zXPDlfSNaL5xcMGiCtWzF0e9eIsgnhjfiqIGu0e07mZvquig=w526-h296-rw"
+            alt="..."
+          />
+        </MDBCarousel>
       </div>
     </>
   )
