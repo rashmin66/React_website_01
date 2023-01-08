@@ -24,6 +24,15 @@
  * Copyright 2012-2013 Mattia Larentis
  * http://www.apache.org/licenses/LICENSE-2.0
  */
+@media only screen and (max-width: 576px) {
+  .col {
+    flex: none !important;
+  }
+  .row {
+    display: block !important;
+  }
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */

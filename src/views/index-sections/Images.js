@@ -9,9 +9,9 @@ function Images() {
   return (
     <>
       <div className="section-images-fluid m-5 p-0">
-        <div class="container">
-          <Row>
-            <Col>
+        <Container className="fluid">
+          <div className="row">
+            <div className="col-sm-12 col-xs-12 col-md-6">
               <MDBCarousel showControls showIndicators>
                 <MDBCarouselItem
                   className="w-100 d-block"
@@ -32,12 +32,20 @@ function Images() {
                   alt="..."
                 />
               </MDBCarousel>
+            </div>
+            <Col className="col-sm-12 col-xs-12 col-md-6">
+              <p>
+                "Video games are a form of art, and like all art, they have the
+                power to inspire and bring people together. They have the
+                ability to transport us to new worlds and allow us to experience
+                things we never could have otherwise. Whether you're a seasoned
+                gamer or just starting out, there's a video game out there for
+                you, and I can't wait to see where your gaming journey takes
+                you."
+              </p>
             </Col>
-            <Col>
-              <p>We are providing top class games</p>
-            </Col>
-          </Row>
-        </div>
+          </div>
+        </Container>
       </div>
     </>
   )
