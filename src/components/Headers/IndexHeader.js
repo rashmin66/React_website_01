@@ -23,14 +23,15 @@ function IndexHeader() {
   });
 
   return (
-    <>
-      <div className="page-header clear-filter" filter-color="blue">
+
+      <div className="page-header" background-color="black">
         <div
           className="page-header-image"
-          style={{
-            backgroundImage: "url(" + require("assets/img/header.jpg") + ")",
-          }}
+          // style={{
+          //   backgroundImage: "url(" + require("assets/img/header.jpg") + ")",
+          // }}
           ref={pageHeader}
+
         ></div>
         {/* <Container>
           <div className="content-center brand">
@@ -39,8 +40,26 @@ function IndexHeader() {
           <h6 className="category category-absolute">
           </h6>
         </Container>*/}
-      </div> 
-    </>
+      <Container>
+         <div class="row mt-5">
+        <div class="col-lg-6 order-1 text-lg-start">
+          <h1>
+            Work that we produce for our clients
+          </h1>
+          <p>
+            Lorem lpsum is simply dummy text of the printing and typesetting industry.
+            lorem lpsum has been the industry's standard.
+            </p>
+          <button type="button" class="btn-primary mb-3">Get more details</button>
+        </div>
+    
+        <div class="col-lg-6 order-2 text-lg-start">
+        <img src="https://play-lh.googleusercontent.com/GxIIRBDk67tp_HUtP71zXPDlfSNaL5xcMGiCtWzF0e9eIsgnhjfiqIGu0e07mZvquig=w526-h296-rw" alt="My Image"  />
+        </div>
+        </div>
+      </Container>
+      </div>
+     
   );
 }
 
