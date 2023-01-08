@@ -28,9 +28,6 @@ function Typography() {
                     src={require('assets/img/GameIcons/RTR-icon.png')}
                   ></img>
                 </a>
-                <button type="button" class="btn btn-primary btn-lg">
-                  Primary
-                </button>
               </Col>
             </Row>
           </div>
