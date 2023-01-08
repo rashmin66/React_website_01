@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useRef } from 'react'
+import { Link } from 'react-router-dom'
 // reactstrap components
 import {
   Button,
@@ -15,42 +15,53 @@ import {
   Nav,
   Container,
   UncontrolledTooltip,
-} from "reactstrap";
+} from 'reactstrap'
 
 function IndexNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
-  const [collapseOpen, setCollapseOpen] = React.useState(false);
+  const messagesEndRef = useRef(null)
+  const [navbarColor, setNavbarColor] = React.useState('navbar-transparent')
+  const [collapseOpen, setCollapseOpen] = React.useState(false)
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
         document.documentElement.scrollTop > 399 ||
         document.body.scrollTop > 399
       ) {
-        setNavbarColor("");
+        setNavbarColor('')
       } else if (
         document.documentElement.scrollTop < 400 ||
         document.body.scrollTop < 400
       ) {
-        setNavbarColor("navbar-transparent");
+        setNavbarColor('navbar-transparent')
       }
-    };
-    window.addEventListener("scroll", updateNavbarColor);
+    }
+    window.addEventListener('scroll', updateNavbarColor)
     return function cleanup() {
-      window.removeEventListener("scroll", updateNavbarColor);
-    };
-  });
+      window.removeEventListener('scroll', updateNavbarColor)
+    }
+  })
+
+  const scrollToBottom = () => {
+    messagesEndRef.current.scrollTop = messagesEndRef.current.scrollHeight
+  }
+
   return (
     <>
       {collapseOpen ? (
         <div
           id="bodyClick"
           onClick={() => {
-            document.documentElement.classList.toggle("nav-open");
-            setCollapseOpen(false);
+            document.documentElement.classList.toggle('nav-open')
+            setCollapseOpen(false)
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
+      <Navbar
+        ref={messagesEndRef}
+        className={'fixed-top ' + navbarColor}
+        expand="lg"
+        color="info"
+      >
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
@@ -58,14 +69,14 @@ function IndexNavbar() {
               target="_blank"
               id="navbar-brand"
             >
-             Neadlesack
+              Neadlesack
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand"></UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
-                document.documentElement.classList.toggle("nav-open");
-                setCollapseOpen(!collapseOpen);
+                document.documentElement.classList.toggle('nav-open')
+                setCollapseOpen(!collapseOpen)
               }}
               aria-expanded={collapseOpen}
               type="button"
@@ -81,7 +92,6 @@ function IndexNavbar() {
             navbar
           >
             <Nav navbar>
-              
               {/* <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -107,45 +117,45 @@ function IndexNavbar() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown> */}
-            <NavItem> 
-              <NavLink
+              <NavItem>
+                <NavLink
                   // className="nav-link btn-neutral"
                   color="info"
                   href="#"
                   // id="upgrade-to-pro"
                   target="_blank"
-             >
+                >
                   <p>Home</p>
-              </NavLink>
+                </NavLink>
               </NavItem>
               <NavItem>
-              <NavLink
+                <NavLink
                   // className="nav-link btn-neutral"
                   color="info"
                   href="#"
                   // id="upgrade-to-pro"
                   target="_blank"
-             >
+                >
                   {/* <i className="now-ui-icons arrows-1_share-66 mr-1"></i> */}
                   <p>About us</p>
-              
-                {/* <UncontrolledTooltip target="#upgrade-to-pro">
+
+                  {/* <UncontrolledTooltip target="#upgrade-to-pro">
                   Cooming soon!
                 </UncontrolledTooltip> */}
                 </NavLink>
               </NavItem>
               <NavItem>
-             <NavLink
+                <NavLink
                   // className="nav-link btn-neutral"
                   color="info"
                   href="#"
                   // id="upgrade-to-pro"
                   target="_blank"
-             >
+                >
                   {/* <i className="now-ui-icons arrows-1_share-66 mr-1"></i> */}
                   <p>News</p>
-              
-                {/* <UncontrolledTooltip target="#upgrade-to-pro">
+
+                  {/* <UncontrolledTooltip target="#upgrade-to-pro">
                   Cooming soon!
                 </UncontrolledTooltip> */}
                 </NavLink>
@@ -188,8 +198,8 @@ function IndexNavbar() {
                 <UncontrolledTooltip target="#instagram-tooltip">
                   Follow us on Instagram
                 </UncontrolledTooltip>
-               </NavItem>
-               {/*<NavItem>
+              </NavItem>
+              {/*<NavItem>
                 <Button
                   href="#"
                   target="_blank"
@@ -214,7 +224,7 @@ function IndexNavbar() {
         </Container>
       </Navbar>
     </>
-  );
+  )
 }
 
-export default IndexNavbar;
+export default IndexNavbar
