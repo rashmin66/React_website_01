@@ -23,7 +23,7 @@ function IndexHeader() {
   })
 
   return (
-    <div className="page-header">
+    <div className="container-sm">
       <div
         className="page-header-image"
         // style={{
@@ -40,7 +40,7 @@ function IndexHeader() {
         </Container>*/}
       <Container>
         <div class="row mt-5">
-          <div class="col-lg-6 order-1 text-lg-start">
+          <div class="col-lg-6 order-1 text-lg-start mt-5">
             <h1>Work that we produce for our clients</h1>
             <p>
               Lorem lpsum is simply dummy text of the printing and typesetting
