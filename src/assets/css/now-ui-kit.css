@@ -4481,9 +4481,9 @@ Created using IcoMoon - icomoon.io
   width: 17px;
 }
 .navbar.navbar-transparent {
-  background-color: transparent !important;
+  background-color: #888888 !important;
   box-shadow: none;
-  color: #ffffff;
+ 
   padding-top: 20px !important;
 }
 .navbar.bg-white:not(.navbar-transparent) a:not(.dropdown-item):not(.btn) {
@@ -5517,7 +5517,7 @@ img {
   left: 0;
   top: 0;
   content: '';
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .login-page .card-login {
@@ -5714,6 +5714,7 @@ img {
   color: #ffffff;
   position: relative;
   overflow: hidden;
+  background-color: #ffffff !important;
 }
 .page-header > .content {
   margin-top: 12%;
@@ -5725,7 +5726,7 @@ img {
   max-height: 440px;
 }
 .page-header:before {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
 }
 .page-header > .container {
   z-index: 2;

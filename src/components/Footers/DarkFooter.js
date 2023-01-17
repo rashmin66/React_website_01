@@ -11,12 +11,12 @@ function DarkFooter() {
         <nav>
           <ul>
             <li>
-              <a
+              {/* <a
                 href="https://www.creative-tim.com?ref=nukr-dark-footer"
                 target="_blank"
               >
                 Creative Tim
-              </a>
+              </a> */}
             </li>
             <li>
               <a
@@ -44,12 +44,12 @@ function DarkFooter() {
           >
             Invision
           </a>
-          <a
+          {/* <a
             href="https://www.creative-tim.com?ref=nukr-dark-footer"
             target="_blank"
           >
             Creative Tim
-          </a>
+          </a> */}
           .
         </div>
       </Container>
