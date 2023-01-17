@@ -5517,7 +5517,7 @@ img {
   left: 0;
   top: 0;
   content: '';
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .login-page .card-login {
@@ -5714,6 +5714,7 @@ img {
   color: #ffffff;
   position: relative;
   overflow: hidden;
+  background-color: #ffffff !important;
 }
 .page-header > .content {
   margin-top: 12%;
@@ -5725,7 +5726,7 @@ img {
   max-height: 440px;
 }
 .page-header:before {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color:#FFFFFF;
 }
 .page-header > .container {
   z-index: 2;
